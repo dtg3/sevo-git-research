@@ -1,4 +1,4 @@
-### Karat Sleuth presentation
+### SEVO presentation
 
 This is for our Software Evolution presentation regarding large commits made to github, 
 as well as our size metrics tool developed in pythin. The presentation written in markdown and
