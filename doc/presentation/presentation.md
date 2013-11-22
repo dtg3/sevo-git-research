@@ -39,6 +39,14 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 ![Eval Set-up](/pics/evalsetup.png)
 
 
+## Evaluation Results
+
+
+### Categorized Commits
+
+![Eval Results](/pics/evalresults1.png)
+
+
 ### The Commit Size Distribution of Open Source Software
 #### International Conference on System Sciences - 2009
 
