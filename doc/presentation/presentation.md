@@ -19,9 +19,11 @@
 
 
 ### Size Metrics
-- Number of files modified in a commit
-- Number of LOC modified in a commit
-- Number of hunks modified in a commit
+- Measured commit size with different levels of granularity
+   - No. files modified
+   - No. LOC (add + deleted + modified)
+   - No. hunks with line changes
+- Used GNU diff
 
 
 ### The Commit Size Distribution of Open Source Software
