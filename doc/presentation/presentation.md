@@ -34,6 +34,11 @@ Commits put into categories within quartiles ranging from Extra-Small to Extra-L
 Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to categorize commits into five categories.
 
 
+### Evaluation Set-up
+
+![Eval Set-up](/pics/evalsetup.png)
+
+
 ### The Commit Size Distribution of Open Source Software
 #### International Conference on System Sciences - 2009
 
