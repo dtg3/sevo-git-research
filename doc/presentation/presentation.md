@@ -76,7 +76,26 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 ![Correlation Coefficient Equation](/pics/correlation-coefficient-equation.png)
 
 
-### Correlation Results
+## Correlation Results
+
+
+### Correlation by System
+<!--
+  Histogram of the correlation coefficients between each two size
+  metrics for each of the 9 projects.
+  Notice that hunks x lines have the strongest correlation.
+-->
+![Correlation by System](/pics/correlation-by-system.png)
+
+
+### Correlation by Size
+<!--
+  Histogram of the correlation coefficients between each two size
+  metrics separated by size ranges extra-small to extra-large. This
+  includes all 9 projects.
+  There is little correlation among the three characteristics.
+-->
+![Correlation by Size](/pics/correlation-by-size.png)
 
 
 ### The Commit Size Distribution of Open Source Software
