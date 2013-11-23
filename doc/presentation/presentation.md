@@ -19,11 +19,13 @@
 
 
 ### Size Metrics
+- Used GNU diff
 - Measured commit size with different levels of granularity
    - No. files modified
    - No. LOC (add + deleted + modified)
    - No. hunks with line changes
-- Used GNU diff
+- Single hunk changes are local, even trivial
+- Multiple hunks suggest rippling impact
 
 
 ### Characterizing Commits
@@ -35,22 +37,28 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 
 ### Evaluation Set-up
-
+<!-- Lists the 9 open source systems that were studied. -->
 ![Eval Set-up](/pics/evalsetup.png)
 
 
 ## Evaluation Results
 
 
+### Typical Commit Size
 <!--
   Point out that 75% of the commits are small or extra-small.
   However, larger commits do happen with "non-trivial frequency"
   The largest commits tend to touch every file (ie, license update)
 -->
-### Typical Commit Size
+![Eval Results - Histogram](/pics/evalresults1.png)
 
-![Eval Results](/pics/evalresults1.png)
 
+### Commit Size Ranges
+<!-- 
+  Same as previous data but in a table format.
+  Note how files/lines/hunks are ranged.
+-->
+![Eval Results - Table](/pics/gcc-commits.png)
 
 ### Correlation between Characteristics
 - Calculated linear correlation coefficient for:
