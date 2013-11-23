@@ -83,6 +83,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 <!--
   Histogram of the correlation coefficients between each two size
   metrics for each of the 9 projects.
+  No significant relationship between file and line size measures.
   Notice that hunks x lines have the strongest correlation.
 -->
 ![Correlation by System](/pics/correlation-by-system.png)
@@ -96,6 +97,14 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
   There is little correlation among the three characteristics.
 -->
 ![Correlation by Size](/pics/correlation-by-size.png)
+
+
+### Vocabulary vs. Commit Size
+- Frequency of words used in commit messages, separated by size of commit
+- Identified 2+ terms in a set
+- All sizes: {file, fix}, {fix, use}, {file, update}
+- Extra-large: {file, fix}
+- Extra-small: {file, fix}, {add, bug}, {fix, use}, {remov, test}
 
 
 ### The Commit Size Distribution of Open Source Software
