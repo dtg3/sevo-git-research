@@ -42,9 +42,23 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 ## Evaluation Results
 
 
-### Categorized Commits
+<!--
+  Point out that 75% of the commits are small or extra-small.
+  However, larger commits do happen with "non-trivial frequency"
+  The largest commits tend to touch every file (ie, license update)
+-->
+### Typical Commit Size
 
 ![Eval Results](/pics/evalresults1.png)
+
+
+### Correlation between Characteristics
+- Calculated linear correlation coefficient for:
+    - files x lines
+    - files x hunks
+    - lines x hunks
+- Corresponded this with categries extra-small to extra-large
+- Found only a correlation between lines and hunks changed
 
 
 ### The Commit Size Distribution of Open Source Software
