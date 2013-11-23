@@ -60,13 +60,23 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 -->
 ![Eval Results - Table](/pics/gcc-commits.png)
 
+
 ### Correlation between Characteristics
 - Calculated linear correlation coefficient for:
     - files x lines
     - files x hunks
     - lines x hunks
 - Corresponded this with categries extra-small to extra-large
-- Found only a correlation between lines and hunks changed
+
+<!--
+  When r is positive, it indicates that as x increases, y increases
+  When r is negative, it indicates that as x increases, y decreases
+  They calculated this in comparison to each level of granularity and by size.
+-->
+![Correlation Coefficient Equation](/pics/correlation-coefficient-equation.png)
+
+
+### Correlation Results
 
 
 ### The Commit Size Distribution of Open Source Software
