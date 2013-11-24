@@ -107,6 +107,15 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 - Extra-small: {file, fix}, {add, bug}, {fix, use}, {remov, test}
 
 
+### Conclusion
+- Most commits are very small with respect to
+    - files (2-4)
+    - lines (less than 50)
+    - hunks (less than 8)
+- No significant correlation between file and line measures
+- Substantial co-relationship between hunk and line measures
+
+
 ### The Commit Size Distribution of Open Source Software
 #### International Conference on System Sciences - 2009
 
