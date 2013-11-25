@@ -45,6 +45,10 @@ Git uses a distributed repository model
  * Allows for multiple work flows
 
 
+![Centralized version
+control](http://git-scm.com/figures/18333fig0103-tn.png)
+
+
 ## Why does this matter?
 
   * Better support for agile development
