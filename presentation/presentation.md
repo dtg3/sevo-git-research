@@ -207,7 +207,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 ### Approach
 
- * Analyze size of commits in over 9,000 open source projects
+ * Analyze size of commits in over 9,000 open source projects using Ohloh
  * Measure over 8 million commits in SLOC
    - single commits (1-100 SLOC)
    - aggregate commits (101-10,000 SLOC)
