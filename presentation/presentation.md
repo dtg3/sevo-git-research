@@ -8,7 +8,7 @@
  * Revision Control / Source Code Management tool
  * Follows the distributed model
  * Offers fast and frictionless branching / merging
- * Extreamly good performance and speed
+ * Extremely good performance and speed
  * Cryptographically secure revision tracking
  * And of course.. Open Source
 
@@ -22,7 +22,7 @@ First let's recap what a 'centralized' revision control...
  * Most version control tools are "Centralized".
  * Client-Server approach to SCM
  * There is only one blessed repositories
- * All commits are immidiatley available in this repository
+ * All commits are immediately available in this repository
  * Must connect to the repository to make a commit
 
 
@@ -56,24 +56,26 @@ control](http://guides.beanstalkapp.com/version-control/intro-to-version-control
   believe there is....exploratory), we could rename to The Problem.
 -->
 ## The Questions
-<!--
-  These are the questions....right?
--->
-- Does the use of Git impact the overall approach to commit "size" with respect to various source code change metrics?
-  - Line Based
-  - Hunk Based
-  - File Based
-- At what level of granularity can Git commits be viewed?
+
+ * Does the use of Git impact the overall approach to commit "size" with respect
+   to various source code change metrics?
+   * Line Based
+   * Hunk Based
+   * File Based
+ * At what level of granularity can Git commits be viewed?
 
 
 <!--
   Layout what we plan to do and briefly describe related works.
 -->
 ## The Approach
-- Aquire opensource projects found on GitHub
-- Analyze commits for current and previous revisions of each project
-- Process each commit based on the code change metrics to determine the "size" of the commit
-- Attempt to determine the different levels at which source code changes can be examined (commit, push, pull, etc.)
+
+ * Acquire open source projects found on GitHub
+ * Analyze commits for current and previous revisions of each project
+ * Process each commit based on the code change metrics to determine the "size"
+   of the commit
+ * Attempt to determine the different levels at which source code changes can be
+   examined (commit, push, pull, etc.)
 
 
 <!--
@@ -84,8 +86,9 @@ control](http://guides.beanstalkapp.com/version-control/intro-to-version-control
 
 ## Literature Review
 
- * What's a Typical Commit? A Characterization of Open Source Software Repositories
- * The Commit SIze Distribution of Open Source Software
+ * What's a Typical Commit? A Characterization of Open Source Software
+   Repositories
+ * The Commit Size Distribution of Open Source Software
  * What Do Large Commits Tell Us? A Taxonomical study of large commits
 
 
