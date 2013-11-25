@@ -45,11 +45,11 @@ Git uses a distributed repository model
  * Allows for multiple work flows
 
 
-Why does this matter?
+## Why does this matter?
 
-  * Better support for aglie developement
+  * Better support for agile developement
   * More flexible collaboration / workflow
-  * Quickly Gaining Popularity
+  * Quickly gaining popularity
     - Used by many large open source projects
       + Linux
       + Ruby
