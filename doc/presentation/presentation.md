@@ -2,6 +2,32 @@
 ### Drew, Evan, Heather
 
 
+<!--
+  Title Slide
+-->
+## What Is Distributed Version Control?
+
+
+<!--
+  Explain by comparison (fastest way to get the job done)
+  Maybe use images from here:
+    http://git-scm.com/book/en/Getting-Started-About-Version-Control
+-->
+## Distributed Version Control vs Centralized Version Control
+
+
+<!--
+  Evan unlocks the magic of the Git on an unsuspecting audience
+-->
+## Enter the Git
+
+
+<!--
+  Layout what we plan to do and briefly describe related works.
+-->
+## The Approach
+
+
 ## Literature Review
 - What's a Typical Commit? A Characterization of Open Source Software Repositories
 - The Commit SIze Distribution of Open Source Software
@@ -122,3 +148,4 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 ### What Do Large Commits Tell Us? A Taxonomical study of large commits
 #### (?? Conference ??) - 2008
+
