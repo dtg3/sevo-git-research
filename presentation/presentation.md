@@ -45,6 +45,14 @@ Git uses a distributed repository model
  * Allows for multiple work flows
 
 
+Why does this matter?
+
+  * Distributed version control is the future of SCM
+  * Services like GitHub, Bitbucket, etc.
+  * More flexible collaboration / workflow
+  * Linus uses it for linux...isn't that good enough!?
+
+
 <!--
   So here we simply say why the aforementioned stuff matters and 
   what we plan to do. If there is a problem to solve (which I don't
