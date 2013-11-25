@@ -27,18 +27,25 @@
   what we plan to do. If there is a problem to solve (which I don't
   believe there is....exploratory), we could rename to The Problem.
 -->
-## The Question
+## The Questions
 <!--
   These are the questions....right?
 -->
-- Does the use of Git impact the overall approach to commits with respect to various size metrics?
-- At what level of granularity can commits be viewed?
+- Does the use of Git impact the overall approach to commit "size" with respect to various source code change metrics?
+  - Line Based
+  - Hunk Based
+  - File Based
+- At what level of granularity can Git commits be viewed?
 
 
 <!--
   Layout what we plan to do and briefly describe related works.
 -->
 ## The Approach
+- Aquire opensource projects found on GitHub
+- Analyze commits for current and previous revisions of each project
+- Process each commit based on the code change metrics to determine the "size" of the commit
+- Attempt to determine the different levels at which source code changes can be examined (commit, push, pull, etc.)
 
 
 <!--
