@@ -235,3 +235,9 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 ### What Do Large Commits Tell Us? A Taxonomical study of large commits
 #### (?? Conference ??) - 2008
 
+
+### Approach
+
+ * Analyze 9 open source projects
+ * Manually classified large commits
+ * Found frequency of types of commits
