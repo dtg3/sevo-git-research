@@ -108,7 +108,7 @@ class prototype:
             patches = [p for p in diff]
             for patch in patches:
                 for hunk in patch.hunks:
-                   
+
                     # Check the first character in each hunk line. Only those that have
                     # been modified will contain a '+' (insertion) or '-' (deletion)
                     totalModifications = 0
@@ -203,7 +203,7 @@ class prototype:
 
     # Print out all stats for the repository
     def printStats(self):
-        
+
         # Stats on entire repository
         repoLOC = totalRepoLOC(self)
         repoCommits = totalRepoCommits(self)
@@ -217,9 +217,9 @@ class prototype:
         locPerHunk = locPerHunk(self)
         locInHunk = locInHunk(self)
 
-        
 
-            
+
+
 
 # -----------------------------------------------------------------------------------
 # Private implementation used within the class:
