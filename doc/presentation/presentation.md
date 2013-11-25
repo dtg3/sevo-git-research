@@ -73,7 +73,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
   When r is negative, it indicates that as x increases, y decreases
   They calculated this in comparison to each level of granularity and by size.
 -->
-![Correlation Coefficient Equation](/pics/correlation-coefficient-equation.png)
+$$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}\sqrt{n(\Sigma y^2) - (\Sigma y)^2}}$$
 
 
 ## Correlation Results
