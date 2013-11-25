@@ -32,24 +32,16 @@ First let's recap what a 'centralized' revision control...
 control](http://guides.beanstalkapp.com/version-control/intro-to-version-control/cvc.png)
 
 
-<!--
-  Title Slide
--->
-## What Is Distributed Version Control?
+Git uses a distributed repository model
 
 
-<!--
-  Explain by comparison (fastest way to get the job done)
-  Maybe use images from here:
-    http://git-scm.com/book/en/Getting-Started-About-Version-Control
--->
-## Distributed Version Control vs Centralized Version Control
-
-
-<!--
-  Evan unlocks the magic of the Git on an unsuspecting audience
--->
-## Enter the Git
+ * No **one** central repository
+ * Anyone with access can clone the entire history of a repository, allowing
+   them to have a complete local copy
+ * Repositories are self contained. No need to commit to a server or even have
+   an internet connection
+ * Commits may be shared between repositories
+ * Allows for multiple work flows
 
 
 <!--
