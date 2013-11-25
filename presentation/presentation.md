@@ -238,7 +238,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
   Distribution of types of changes for all projects.
   Most common: Merge, documentation, feature addition, and add module
 -->
-![Commit Size](/diagrams/types-of-commits.png)
+![Commit Size](/diagrams/types-of-commits.svg)
 
 
 <!--
