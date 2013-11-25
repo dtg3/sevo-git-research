@@ -23,6 +23,14 @@
 
 
 <!--
+  So here we simply say why the aforementioned stuff matters and 
+  what we plan to do. If there is a problem to solve (which I don't
+  believe there is....exploratory), we could rename to The Problem.
+-->
+## The Question
+
+
+<!--
   Layout what we plan to do and briefly describe related works.
 -->
 ## The Approach
