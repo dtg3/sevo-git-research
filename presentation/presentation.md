@@ -13,6 +13,23 @@
  * And of course.. Open Source
 
 
+## Distributed Version control?
+
+
+First let's recap what a 'centralized' revision control...
+
+
+ * Most version control tools are "Centralized".
+ * Client-Server approach to SCM
+ * There is only one blessed repositories
+ * All commits are immidiatley available in this repository
+ * Must connect to the repository to make a commit
+
+
+![Centralized version
+control](http://guides.beanstalkapp.com/version-control/intro-to-version-control/cvc.png)
+
+
 <!--
   Title Slide
 -->
