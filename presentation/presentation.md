@@ -60,32 +60,6 @@ Git uses a distributed repository model
  * At what level of granularity can Git commits be viewed?
 
 
-<!--
-  Layout what we plan to do and briefly describe related works.
--->
-## Our Approach
-
- * Acquire open source projects found on GitHub
- * Analyze commits for current and previous revisions of each project
- * Process each commit based on the code change metrics to determine the "size"
-   of the commit
- * Attempt to determine the different levels at which source code changes can be
-   examined (commit, push, pull, etc.)
-
-
-<!--
-  What have we done....seriously, what have we done?
--->
-## Progress Thus Far...
-  
-  * Metric Collection
-  * Tool Assistance
-    - [libgit2](http://libgit2.github.com/) / [pygit2](http://www.pygit2.org/)
-    - [Ohcount](https://github.com/blackducksw/ohcount)
-    - [CLOC](http://cloc.sourceforge.net/)
-    - [GitHub API](http://developer.github.com/v3/)
-
-
 ## Literature Review
 
  * What's a Typical Commit? A Characterization of Open Source Software
@@ -246,3 +220,32 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
   Most common: Merge, documentation, feature addition, and add module
 -->
 ![Commit Size](/diagrams/types-of-commits.png)
+
+
+<!--
+  Layout what we plan to do and briefly describe related works.
+-->
+## Our Approach
+
+ * Acquire open source projects found on GitHub
+ * Analyze commits for current and previous revisions of each project
+ * Process each commit based on the code change metrics to determine the "size"
+   of the commit
+ * Attempt to determine the different levels at which source code changes can be
+   examined (commit, push, pull, etc.)
+
+
+<!--
+  What have we done....seriously, what have we done?
+-->
+## Progress Thus Far...
+  
+  * Metric Collection
+  * Tool Assistance
+    - [libgit2](http://libgit2.github.com/) / [pygit2](http://www.pygit2.org/)
+    - [Ohcount](https://github.com/blackducksw/ohcount)
+    - [CLOC](http://cloc.sourceforge.net/)
+    - [GitHub API](http://developer.github.com/v3/)
+
+
+## Questions?
