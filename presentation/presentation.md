@@ -97,9 +97,6 @@ Git uses a distributed repository model
 ### What's a Typical Commit? A Characterization of Open Source Software Repositories
 #### IEEE International Conference on Program Comprehension - 2008
 
-
-#### Authors
-
  * Abdulkareem Alali
  * Huzefa Kagdi
  * Jonathan Maletic
@@ -210,6 +207,9 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 ### The Commit Size Distribution of Open Source Software
 #### International Conference on System Sciences - 2009
 
+ * Oliver Arafat
+ * Dirk Riehle
+
 
 ### Approach
 
@@ -227,6 +227,10 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 ### What Do Large Commits Tell Us? A Taxonomical study of large commits
 #### (?? Conference ??) - 2008
+
+ * Abram Hindle
+ * Daniel M. German
+ * Ric Holt
 
 
 ### Approach
