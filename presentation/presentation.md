@@ -45,16 +45,19 @@ Git uses a distributed repository model
  * Allows for multiple work flows
 
 
-![Distributed version
-control](http://git-scm.com/figures/18333fig0103-tn.png)
+Why does this matter?
 
-
-## Why does this matter?
-
- * More flexible collaboration / workflow
- * Distributed version control is the future of SCM
- * Services like GitHub, Bitbucket, etc.
- * Linus uses it for linux...isn't that good enough!?
+  * Better support for aglie developement
+  * More flexible collaboration / workflow
+  * Quickly Gaining Popularity
+    - Used by many large open source projects
+      + Linux
+      + Ruby
+      + Homebrew
+      + Gimp
+      + and many more!
+    - GitHub houses over 2 Million Code Repositories
+  * Linus uses it!
 
 
 <!--
@@ -66,9 +69,9 @@ control](http://git-scm.com/figures/18333fig0103-tn.png)
 
  * Does the use of Git impact the overall approach to commit "size" with respect
    to various source code change metrics?
-   - Line Based
-   - Hunk Based
-   - File Based
+   * Line Based
+   * Hunk Based
+   * File Based
  * At what level of granularity can Git commits be viewed?
 
 
