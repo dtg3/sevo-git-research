@@ -111,6 +111,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 
 ### Evaluation Set-up
+
 <!-- Lists the 9 open source systems that were studied. -->
 ![Eval Set-up](/diagrams/evalsetup.svg)
 
@@ -119,6 +120,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 
 ### Typical Commit Size
+
 <!--
   Point out that 75% of the commits are small or extra-small.
   However, larger commits do happen with "non-trivial frequency"
@@ -128,6 +130,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 
 ### Commit Size Ranges
+
 <!-- 
   Same as previous data but in a table format.
   Note how files/lines/hunks are ranged.
@@ -155,6 +158,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 
 ### Correlation by System
+
 <!--
   Histogram of the correlation coefficients between each two size
   metrics for each of the 9 projects.
@@ -165,6 +169,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 
 ### Correlation by Size
+
 <!--
   Histogram of the correlation coefficients between each two size
   metrics separated by size ranges extra-small to extra-large. This
@@ -210,6 +215,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 
 ### Results
+
 <!-- The smaller the size of a commit, the more likely it is. -->
 ![Commit Size](/diagrams/commit-size.svg)
 
@@ -230,11 +236,12 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 
 ### Results
+
 <!--
   Distribution of types of changes for all projects.
   Most common: Merge, documentation, feature addition, and add module
 -->
-![Commit Size](/diagrams/types-of-commits.png)
+![Commit Size](/diagrams/types-of-commits.svg)
 
 
 <!--
@@ -254,7 +261,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
   What have we done....seriously, what have we done?
 -->
 ## Progress Thus Far...
-  
+
   * Metric Collection
   * Tool Assistance
     - [libgit2](http://libgit2.github.com/) / [pygit2](http://www.pygit2.org/)
