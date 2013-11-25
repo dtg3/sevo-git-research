@@ -66,9 +66,10 @@
 
 
 ## Literature Review
-- What's a Typical Commit? A Characterization of Open Source Software Repositories
-- The Commit SIze Distribution of Open Source Software
-- What Do Large Commits Tell Us? A Taxonomical study of large commits
+
+ * What's a Typical Commit? A Characterization of Open Source Software Repositories
+ * The Commit SIze Distribution of Open Source Software
+ * What Do Large Commits Tell Us? A Taxonomical study of large commits
 
 
 ### What's a Typical Commit? A Characterization of Open Source Software Repositories
@@ -76,19 +77,21 @@
 
 
 #### Authors
-- Abdulkareem Alali
-- Huzefa Kagdi
-- Jonathan Maletic
+
+ * Abdulkareem Alali
+ * Huzefa Kagdi
+ * Jonathan Maletic
 
 
 ### Size Metrics
-- Used GNU diff
-- Measured commit size with different levels of granularity
+
+ * Used GNU diff
+ * Measured commit size with different levels of granularity
    - No. files modified
    - No. LOC (add + deleted + modified)
    - No. hunks with line changes
-- Single hunk changes are local, even trivial
-- Multiple hunks suggest rippling impact
+ * Single hunk changes are local, even trivial
+ * Multiple hunks suggest rippling impact
 
 
 ### Characterizing Commits
@@ -125,11 +128,12 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
 
 
 ### Correlation between Characteristics
-- Calculated linear correlation coefficient for:
-    - files x lines
-    - files x hunks
-    - lines x hunks
-- Corresponded this with categries extra-small to extra-large
+
+ * Calculated linear correlation coefficient for:
+   - files x lines
+   - files x hunks
+   - lines x hunks
+ * Corresponded this with categries extra-small to extra-large
 
 <!--
   When r is positive, it indicates that as x increases, y increases
@@ -163,20 +167,22 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 
 ### Vocabulary vs. Commit Size
-- Frequency of words used in commit messages, separated by size of commit
-- Identified 2+ terms in a set
-- All sizes: {file, fix}, {fix, use}, {file, update}
-- Extra-large: {file, fix}
-- Extra-small: {file, fix}, {add, bug}, {fix, use}, {remov, test}
+
+ * Frequency of words used in commit messages, separated by size of commit
+ * Identified 2+ terms in a set
+ * All sizes: {file, fix}, {fix, use}, {file, update}
+ * Extra-large: {file, fix}
+ * Extra-small: {file, fix}, {add, bug}, {fix, use}, {remov, test}
 
 
 ### Conclusion
-- Most commits are very small with respect to
-    - files (2-4)
-    - lines (less than 50)
-    - hunks (less than 8)
-- No significant correlation between file and line measures
-- Substantial co-relationship between hunk and line measures
+
+ * Most commits are very small with respect to
+   - files (2-4)
+   - lines (less than 50)
+   - hunks (less than 8)
+ * No significant correlation between file and line measures
+ * Substantial co-relationship between hunk and line measures
 
 
 ### The Commit Size Distribution of Open Source Software
