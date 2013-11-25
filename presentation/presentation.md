@@ -47,7 +47,7 @@ Git uses a distributed repository model
 
 ## Why does this matter?
 
-  * Better support for agile developement
+  * Better support for agile development
   * More flexible collaboration / workflow
   * Quickly gaining popularity
     - Used by many large open source projects
@@ -80,7 +80,7 @@ Git uses a distributed repository model
  * What's a Typical Commit? A Characterization of Open Source Software
    Repositories
  * The Commit Size Distribution of Open Source Software
- * What Do Large Commits Tell Us? A Taxonomical study of large commits
+ * What Do Large Commits Tell Us? A Taxonomical Study of Large Commits
 
 
 ### What's a Typical Commit? A Characterization of Open Source Software Repositories
@@ -144,7 +144,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
    - files x lines
    - files x hunks
    - lines x hunks
- * Corresponded this with categries extra-small to extra-large
+ * Corresponded this with categories ranging from extra-small to extra-large
 
 <!--
   When r is positive, it indicates that as x increases, y increases
@@ -207,8 +207,8 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 ### Approach
 
- * Analyze size of commits in over 9,000 open source projects using Ohloh
- * Measure over 8 million commits in SLOC
+ * Analyzed size of commits in over 9,000 open source projects using Ohloh
+ * Measured over 8 million commits using SLOC
    - single commits (1-100 SLOC)
    - aggregate commits (101-10,000 SLOC)
    - repository refactorings (10,000+ SLOC)
@@ -220,7 +220,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 ![Commit Size](/diagrams/commit-size.svg)
 
 
-### What Do Large Commits Tell Us? A Taxonomical study of large commits
+### What Do Large Commits Tell Us? A Taxonomical Study of Large Commits
 #### International Conference on Mining Software Repositories - 2008
 
  * Abram Hindle
@@ -230,9 +230,9 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 
 ### Approach
 
- * Analyze 9 open source projects
+ * Analyzed 9 open source projects
  * Manually classified large commits
- * Found frequency of types of commits
+ * Found the frequency of types of large commits
 
 
 ### Results
