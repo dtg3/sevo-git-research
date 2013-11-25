@@ -1,4 +1,4 @@
-## Gitting a grep on Git Commits
+## Gitting a Grep on Git Commits
 ### Drew, Evan, Heather
 
 
