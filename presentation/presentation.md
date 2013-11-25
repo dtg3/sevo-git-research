@@ -30,7 +30,7 @@ First let's recap what a 'centralized' revision control...
 
 
 ![Centralized version
-control](http://guides.beanstalkapp.com/version-control/intro-to-version-control/cvc.png)
+control](http://git-scm.com/figures/18333fig0102-tn.png)
 
 
 Git uses a distributed repository model
