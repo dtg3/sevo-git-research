@@ -26,6 +26,7 @@ First let's recap what a 'centralized' revision control...
  * There is only one blessed repositories
  * All commits are immediately available in this repository
  * Must connect to the repository to make a commit
+ * Single point of failure
 
 
 ![Centralized version
