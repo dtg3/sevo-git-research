@@ -31,14 +31,14 @@
 ### Characterizing Commits
 Commits put into categories within quartiles ranging from Extra-Small to Extra-Large
 
-![Figure 2](/pics/fig1.2.svg)
+![Figure 2](/diagrams/fig1.2.svg)
 
 Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to categorize commits into five categories.
 
 
 ### Evaluation Set-up
 <!-- Lists the 9 open source systems that were studied. -->
-![Eval Set-up](/pics/evalsetup.svg)
+![Eval Set-up](/diagrams/evalsetup.svg)
 
 
 ## Evaluation Results
@@ -50,7 +50,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
   However, larger commits do happen with "non-trivial frequency"
   The largest commits tend to touch every file (ie, license update)
 -->
-![Eval Results - Histogram](/pics/evalresults1.svg)
+![Eval Results - Histogram](/diagrams/evalresults1.svg)
 
 
 ### Commit Size Ranges
@@ -58,7 +58,7 @@ Figure 2.  A box plot showing the Inter Quartile Range (IQR) regions used to cat
   Same as previous data but in a table format.
   Note how files/lines/hunks are ranged.
 -->
-![Eval Results - Table](/pics/gcc-commits.svg)
+![Eval Results - Table](/diagrams/gcc-commits.svg)
 
 
 ### Correlation between Characteristics
@@ -86,7 +86,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
   No significant relationship between file and line size measures.
   Notice that hunks x lines have the strongest correlation.
 -->
-![Correlation by System](/pics/correlation-by-system.svg)
+![Correlation by System](/diagrams/correlation-by-system.svg)
 
 
 ### Correlation by Size
@@ -96,7 +96,7 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
   includes all 9 projects.
   There is little correlation among the three characteristics.
 -->
-![Correlation by Size](/pics/correlation-by-size.svg)
+![Correlation by Size](/diagrams/correlation-by-size.svg)
 
 
 ### Vocabulary vs. Commit Size
