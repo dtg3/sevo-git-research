@@ -51,10 +51,10 @@ control](http://git-scm.com/figures/18333fig0103-tn.png)
 
 Why does this matter?
 
-  * Distributed version control is the future of SCM
-  * Services like GitHub, Bitbucket, etc.
-  * More flexible collaboration / workflow
-  * Linus uses it for linux...isn't that good enough!?
+ * More flexible collaboration / workflow
+ * Distributed version control is the future of SCM
+ * Services like GitHub, Bitbucket, etc.
+ * Linus uses it for linux...isn't that good enough!?
 
 
 <!--
@@ -66,9 +66,9 @@ Why does this matter?
 
  * Does the use of Git impact the overall approach to commit "size" with respect
    to various source code change metrics?
-   * Line Based
-   * Hunk Based
-   * File Based
+   - Line Based
+   - Hunk Based
+   - File Based
  * At what level of granularity can Git commits be viewed?
 
 
