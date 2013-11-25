@@ -34,6 +34,7 @@
 - Does the use of Git impact the overall approach to commits with respect to various size metrics?
 - At what level of granularity can commits be viewed?
 
+
 <!--
   Layout what we plan to do and briefly describe related works.
 -->
