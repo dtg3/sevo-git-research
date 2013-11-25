@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="574.08167"
+   height="345.59091"
+   id="svg7514"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 20">
+  <defs
+     id="defs7516" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="324.89797"
+     inkscape:cy="69.938352"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="20"
+     fit-margin-left="20"
+     fit-margin-right="20"
+     fit-margin-bottom="20"
+     inkscape:window-width="850"
+     inkscape:window-height="1022"
+     inkscape:window-x="10"
+     inkscape:window-y="10"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7519">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.102027,-256.70963)">
+    <g
+       transform="matrix(2.263825,0,0,-2.263825,-650.6093,1433.9515)"
+       id="g7269">
+      <text
+         id="text6737"
+         transform="matrix(1,0,0,-1,328.5,504.72)">
+        <tspan
+           id="tspan6739"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.5215001 10.5003 16.021799 18.5436 23.538601 26.0604 31.055401 33.548401 38.591999 45.081001 47.574001 53.095501 58.074299 60.5961 66.117599 71.639099 76.617897 82.139397 84.661201 89.656197 95.177696 100.6992 104.1777 109.1727 114.1677 116.6895 121.6845 126.6795 131.6745 134.66251 139.7016 147.6801 152.67509 155.1969 160.7184 165.71339 170.7084 176.2299 178.75169 181.24471 186.7662 189.28799 194.283 197.271 202.7925 208.314 213.2325 215.72549"
+           style="font-size:9px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Table 1. Nine open source systems used in study.</tspan>
+      </text>
+      <text
+         id="text6741"
+         transform="matrix(1,0,0,-1,352.92,486.84)">
+        <tspan
+           id="tspan6743"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.5741258 10.587132 14.425794 17.7855 22.237387 30.516912 77.916519 85.153969 90.728096 95.10984 100.1499 103.48956 106.19096 111.20396 116.77809 146.89821 154.13565 158.58754 163.03943 166.94022 169.72878 174.74179 180.31592 184.15457"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Bold">System Duration Versions</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6745"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,496.2 0.47998,0 0,0.47998 -0.47998,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6747"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,496.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6749"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,496.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6751"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,496.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6753"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,496.2 0.48004,0 0,0.47998 -0.48004,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6755"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,484.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6757"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,484.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6759"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,484.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6761"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,484.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6763"
+         transform="matrix(1,0,0,-1,324,474.96)">
+        <tspan
+           id="tspan6765"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.0220242 9.4829283"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">gcc</tspan>
+      </text>
+      <text
+         id="text6767"
+         transform="matrix(1,0,0,-1,436.01959,474.96)">
+        <tspan
+           id="tspan6769"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.5600901 12.541032 16.960854 21.380676 24.740381 28.609104 69.948616 74.988678 79.96962 84.950562 89.990623 94.971565"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">8 years 54536</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6771"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,484.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6773"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,484.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6775"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,484.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6777"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,472.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6779"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,472.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6781"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,472.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6783"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,472.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6785"
+         transform="matrix(1,0,0,-1,324,463.02)">
+        <tspan
+           id="tspan6787"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6582899 11.69835 14.45886 17.21937 22.25943 27.244381"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">Collab</tspan>
+      </text>
+      <text
+         id="text6789"
+         transform="matrix(1,0,0,-1,432.24005,463.02)">
+        <tspan
+           id="tspan6791"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.49997 12.54003 15.06006 20.041002 24.460823 28.880646 32.240353 36.109074 73.729164 78.769226 83.750168 88.73111 93.771172 98.752113"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">5.7 years 20288</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6793"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,472.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6795"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,472.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6797"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,472.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6799"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,460.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6801"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,460.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6803"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,460.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6805"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,460.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6807"
+         transform="matrix(1,0,0,-1,324,451.02)">
+        <tspan
+           id="tspan6809"
+           sodipodi:role="line"
+           y="0"
+           x="0 4.432848 10.539036 15.579096 18.348623 21.118153"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">JEdit</tspan>
+      </text>
+      <text
+         id="text6811"
+         transform="matrix(1,0,0,-1,431.03965,451.02)">
+        <tspan
+           id="tspan6813"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.49997 12.54003 17.58009 22.554018 26.966825 31.379635 34.739342 38.601048 77.480652 82.520714 87.494637 92.468567 97.442497"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">6.1 years 2467</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6815"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,460.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6817"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,460.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6819"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,460.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6821"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,448.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6823"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,448.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6825"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,448.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6827"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,448.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6829"
+         transform="matrix(1,0,0,-1,324,439.02)">
+        <tspan
+           id="tspan6831"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.1292338 11.146248 16.163261 20.545008"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">Ruby</tspan>
+      </text>
+      <text
+         id="text6833"
+         transform="matrix(1,0,0,-1,436.01959,439.02)">
+        <tspan
+           id="tspan6835"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.5600901 12.541032 16.960854 21.380676 24.740381 28.609104 69.948616 74.988678 79.96962 84.950562 89.990623 94.971565"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">9 years 10667</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6837"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,448.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6839"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,448.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6841"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,448.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6843"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,436.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6845"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,436.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6847"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,436.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6849"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,436.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6851"
+         transform="matrix(1,0,0,-1,324,427.02)">
+        <tspan
+           id="tspan6853"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.590158 8.3516703 13.380708 18.409746 22.791492 28.932751 33.961788 37.800449 41.639111"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">LinuxBoss</tspan>
+      </text>
+      <text
+         id="text6855"
+         transform="matrix(1,0,0,-1,432.24005,427.02)">
+        <tspan
+           id="tspan6857"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.49997 12.54003 15.06006 20.041002 24.460823 28.880646 32.240353 36.109074 76.249191 81.289253 86.270195 91.251137 96.232079"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">7.9 years 3023</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6859"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,436.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6861"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,436.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6863"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,436.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6865"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,424.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6867"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,424.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6869"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,424.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6871"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,424.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6873"
+         transform="matrix(1,0,0,-1,324,415.02)">
+        <tspan
+           id="tspan6875"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.1402559 11.120196 16.148232 23.400707 27.782454 32.762394 37.790428 45.042908 47.744297 52.724239"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">Phpmyadmin</tspan>
+      </text>
+      <text
+         id="text6877"
+         transform="matrix(1,0,0,-1,432.24005,415.02)">
+        <tspan
+           id="tspan6879"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.49997 12.54003 15.06006 20.041002 24.460823 28.880646 32.240353 36.109074 76.249191 81.289253 86.270195 91.251137 96.232079"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">6.7 years 6028</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6881"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,424.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6883"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,424.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6885"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,424.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6887"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,412.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6889"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,412.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6891"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,412.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6893"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,412.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6895"
+         transform="matrix(1,0,0,-1,324,403.02)">
+        <tspan
+           id="tspan6897"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.3667002 12.83562 17.815559 22.8456 25.607113 28.963812 35.025913 40.05595 47.310432 50.011826 55.051884 57.813396 61.712177 64.473686 68.372475 73.402512 76.164024 81.194061 85.032722"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">MySql-Administrator</tspan>
+      </text>
+      <text
+         id="text6899"
+         transform="matrix(1,0,0,-1,432.24005,403.02)">
+        <tspan
+           id="tspan6901"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.0300398 7.4899502 12.51999 15.04002 20.01996 24.48888 28.9578 32.314499 36.15316 78.753189 83.783234 88.763168 93.743111"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">1.3 years 384</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6903"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,412.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6905"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,412.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6907"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,412.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6909"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,400.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6911"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,400.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6913"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,400.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6915"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,400.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6917"
+         transform="matrix(1,0,0,-1,324,391.02)">
+        <tspan
+           id="tspan6919"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.1011782 10.529016 13.293534 18.333593 23.322552 28.31151"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">Python</tspan>
+      </text>
+      <text
+         id="text6921"
+         transform="matrix(1,0,0,-1,436.01959,391.02)">
+        <tspan
+           id="tspan6923"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.5600901 12.541032 16.960854 21.380676 24.740381 28.609104 69.948616 74.988678 79.96962 84.950562 89.990623 94.971565"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">6 years 20420</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6925"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,400.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6927"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,400.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6929"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,400.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6931"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,388.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6933"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,388.68 0.47998,0 0,11.52 -0.47998,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6935"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,388.68 0.48001,0 0,11.52 -0.48001,0 0,-11.52 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6937"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,388.68 0.48004,0 0,11.52 -0.48004,0 0,-11.52 z" />
+      <text
+         id="text6939"
+         transform="matrix(1,0,0,-1,324,379.02)">
+        <tspan
+           id="tspan6941"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.2524762 11.719392 16.747429 19.44882 24.476856 29.456797 32.811493 35.573006 40.60104 44.516857 47.218246 52.258308 55.019821 57.78133 62.223198 66.139015 68.598923"
+           style="font-size:10.02000046px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman Italic">Debian-installer.</tspan>
+      </text>
+      <text
+         id="text6943"
+         transform="matrix(1,0,0,-1,432.24005,379.02)">
+        <tspan
+           id="tspan6945"
+           sodipodi:role="line"
+           y="0"
+           x="0 5.04006 7.49997 12.54003 15.06006 20.041002 24.460823 28.880646 32.240353 36.109074 73.729164 78.769226 83.750168 88.73111 93.771172 98.752113"
+           style="font-size:10.02000046px;font-variant:normal;font-weight:normal;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRoman">7.5 years 40425</tspan>
+      </text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path6947"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,388.2 99.66,0 0,0.47998 -99.66,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6949"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,388.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6951"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,388.2 71.58,0 0,0.47998 -71.58,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6953"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,376.2 0.47998,0 0,12 -0.47998,0 0,-12 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6955"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 318.36,376.2 99.18,0 0,0.47998 -99.18,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6957"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 417.54,376.2 0.47998,0 0,12 -0.47998,0 0,-12 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6959"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 418.02,376.68 64.68,0 0,-0.48 -64.68,0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6961"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 482.7,376.2 0.48001,0 0,12 -0.48001,0 0,-12 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6963"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 483.18,376.2 70.62,0 0,0.47998 -70.62,0 0,-0.47998 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6965"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,376.2 0.48004,0 0,12 -0.48004,0 0,-12 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6967"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 553.8,376.2 0.48004,0 0,0.47998 -0.48004,0 0,-0.47998 z" />
+    </g>
+  </g>
+</svg>
