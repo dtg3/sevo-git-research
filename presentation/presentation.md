@@ -87,10 +87,10 @@ control](http://guides.beanstalkapp.com/version-control/intro-to-version-control
   
   * Metric Collection
   * Tool Assistance
-    *[libgit2](http://libgit2.github.com/) / [pygit2](http://www.pygit2.org/)
-    *[Ohcount](https://github.com/blackducksw/ohcount)
-    *[CLOC](http://cloc.sourceforge.net/)
-    *[GitHub API](http://developer.github.com/v3/)
+    - [libgit2](http://libgit2.github.com/) / [pygit2](http://www.pygit2.org/)
+    - [Ohcount](https://github.com/blackducksw/ohcount)
+    - [CLOC](http://cloc.sourceforge.net/)
+    - [GitHub API](http://developer.github.com/v3/)
 
 
 ## Literature Review
