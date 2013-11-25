@@ -45,6 +45,10 @@ Git uses a distributed repository model
  * Allows for multiple work flows
 
 
+![Distributed version
+control](http://git-scm.com/figures/18333fig0103-tn.png)
+
+
 Why does this matter?
 
   * Distributed version control is the future of SCM
