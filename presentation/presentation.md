@@ -2,6 +2,17 @@
 ## Drew, Evan, Heather
 
 
+## What is Git?
+
+
+ * Revision Control / Source Code Management tool
+ * Follows the distributed model
+ * Offers fast and frictionless branching / merging
+ * Extreamly good performance and speed
+ * Cryptographically secure revision tracking
+ * And of course.. Open Source
+
+
 <!--
   Title Slide
 -->
