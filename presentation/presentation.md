@@ -241,3 +241,11 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
  * Analyze 9 open source projects
  * Manually classified large commits
  * Found frequency of types of commits
+
+
+### Results
+<!--
+  Distribution of types of changes for all projects.
+  Most common: Merge, documentation, feature addition, and add module
+-->
+![Commit Size](/diagrams/types-of-commits.png)
