@@ -13,7 +13,9 @@
  * And of course.. Open Source
 
 
-## Distributed Version control?
+## Distributed Version Control?
+
+Maybe we're gitting ahead of ourselves...
 
 
 First let's recap what a 'centralized' revision control...
