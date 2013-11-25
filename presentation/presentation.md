@@ -49,7 +49,7 @@ Git uses a distributed repository model
 control](http://git-scm.com/figures/18333fig0103-tn.png)
 
 
-Why does this matter?
+## Why does this matter?
 
  * More flexible collaboration / workflow
  * Distributed version control is the future of SCM
