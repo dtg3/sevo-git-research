@@ -1,5 +1,5 @@
-## Gitting a Grep on Git Commits
-### Drew, Evan, Heather
+# Gitting a Grep on Git Commits
+## Drew, Evan, Heather
 
 
 <!--
