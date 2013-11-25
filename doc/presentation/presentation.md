@@ -28,6 +28,12 @@
 ## The Approach
 
 
+<!--
+  What have we done....seriously, what have we done?
+-->
+## Progress Thus Far...
+
+
 ## Literature Review
 - What's a Typical Commit? A Characterization of Open Source Software Repositories
 - The Commit SIze Distribution of Open Source Software
