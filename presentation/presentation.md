@@ -1,4 +1,4 @@
-## Software Evolution
+## Gitting a grep on Git Commits
 ### Drew, Evan, Heather
 
 
