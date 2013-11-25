@@ -277,4 +277,5 @@ $$r=\frac{n\Sigma xy - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2}
 ## Questions?
 
 
+![FIREWORKS!!!](http://images.wikia.com/glee/images/8/81/5b71073bd590a33d_nye2007_fireworks_gif.gif)
 # You're Welcome
