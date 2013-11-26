@@ -1,0 +1,13 @@
+import argparse
+import sys
+import os
+import sqlite3
+from colorama import init, Fore, Back, Style
+
+init()
+
+def main(argv):
+    print(Fore.RED 'Red Text')
+
+if __name__ == '__main__':
+  main(sys.argv)
