@@ -14,7 +14,7 @@ def main(argv):
 
   # ADD ARGS HERE
   parser.add_argument('-r','--repo', help='Process individual repo')
-  parser.add_argument('-l','--repoList', help='Process repo text file link')
+  parser.add_argument('-l','--repoList', help='Process repo text file list')
 
   # TAKE CLI ARGS AND PARSE ALL THE THINGS
   cliOpt = parser.parse_args(argv[1:])
