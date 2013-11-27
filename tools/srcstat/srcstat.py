@@ -3,7 +3,10 @@ import sys
 import os
 import sqlite3
 import imp
+
 from gitreap import *
+
+repos = []
 
 def main(argv):
   # CLI MAGIC
@@ -17,10 +20,14 @@ def main(argv):
   cliOpt = parser.parse_args(argv[1:])
 
   if cliOpt.repo:
-    print collectRepo(cliOpt.repo)
+    repos.append(collectRepo(cliOpt.repo))
 
   if cliOpt.repoList:
-    collectAllRepos(cliOpt.repoList)
+    repos.extend(collectAllRepos(cliOpt.repoList))
+
+  for repo in repos:
+    print repo
+    traverse(repo)
 
   # RUN MAIN - MAKES IT FEEL MORE LIKE A REGUALR C++ APP
 if __name__ == '__main__':
