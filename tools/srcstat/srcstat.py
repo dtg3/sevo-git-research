@@ -27,7 +27,8 @@ def main(argv):
 
   for repo in repos:
     print repo
-    traverse(repo)
+    hunks(repo)
+    commitInfo(repo)
 
   # RUN MAIN - MAKES IT FEEL MORE LIKE A REGUALR C++ APP
 if __name__ == '__main__':
