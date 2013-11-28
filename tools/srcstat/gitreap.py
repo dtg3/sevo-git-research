@@ -60,8 +60,8 @@ def hunks(repo):
 						print line
 				print 'TOTAL LINES: ' + str(totesLines)
 				print 'TOTAL MODS: ' + str(totesMods)
+		print ''
 		i += 1
-
 	print ''
 
 def commitInfo(repo):
