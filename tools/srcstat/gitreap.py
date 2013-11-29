@@ -1,5 +1,6 @@
 import os
 import time
+import subprocess
 
 from pygit2 import clone_repository
 from pygit2 import Repository
@@ -78,12 +79,14 @@ def commitInfo(repo):
 		
 def getLOCS(repo):
 	#for repo in repos:
-	print repo.replace('.git', '')
-	'''
-	call(["ls", "-l"])
+	# call(["ls", "-l"])
 	# cloc [directory] --by-file -csv
-	ouput = subprocess.Popen('cloc', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-	for line in p.stdout.readlines():
-		print line,
-	retval = p.wait()
-	'''
+	output = subprocess.Popen('cloc ' + repo.replace('.git', '') + ' --by-file --csv', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+	start = False
+	for line in output.stdout.readlines():
+		if line[0] == 'l':
+			start = True
+			
+		if start:
+			print line,
+	retval = output.wait()
