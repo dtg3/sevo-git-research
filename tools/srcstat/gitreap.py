@@ -81,13 +81,4 @@ def getLOCS(repos):
 		for line in p.stdout.readlines():
 			print line,
 		retval = p.wait()
-
-# WALK THROUGH THE REPOS TO GET REPO WIDE LOC STATS
-def getLOCS(repos):
-	for repo in repos:
-		call(["ls", "-l"])
-		# cloc [directory] --by-file -csv
-		ouput = subprocess.Popen('cloc', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-		for line in p.stdout.readlines():
-			print line,
-		retval = p.wait()
+		
