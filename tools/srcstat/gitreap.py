@@ -76,11 +76,14 @@ def commitInfo(repo):
 		print 'Message: ' + commit.message.rstrip('\n')
 		print ''
 		
-def getLOCS(repos):
-	for repo in repos:
-		call(["ls", "-l"])
-		# cloc [directory] --by-file -csv
-		ouput = subprocess.Popen('cloc', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-		for line in p.stdout.readlines():
-			print line,
-		retval = p.wait()
+def getLOCS(repo):
+	#for repo in repos:
+	print repo.replace('.git', '')
+	'''
+	call(["ls", "-l"])
+	# cloc [directory] --by-file -csv
+	ouput = subprocess.Popen('cloc', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+	for line in p.stdout.readlines():
+		print line,
+	retval = p.wait()
+	'''

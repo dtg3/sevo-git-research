@@ -29,6 +29,7 @@ def main(argv):
     print repo
     hunks(repo)
     commitInfo(repo)
+    getLOCS(repo)
 
   # RUN MAIN - MAKES IT FEEL MORE LIKE A REGUALR C++ APP
 if __name__ == '__main__':
