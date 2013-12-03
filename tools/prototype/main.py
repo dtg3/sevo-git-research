@@ -19,7 +19,6 @@ repos = [
     "https://github.com/linuxmint/Cinnamon.git",
     "https://github.com/torvalds/linux.git",
     "https://github.com/apache/hadoop-common.git",
-    "https://github.com/django/django.git",
     "https://github.com/visionmedia/express.git",
     "https://github.com/freebsd/freebsd.git",
 ]
