@@ -204,6 +204,8 @@ class prototype:
     # Print out all stats for the repository
     def printStats(self):
         
+        print "-----------" + self.name + "-----------"
+
         # Stats on entire repository
         repoLOC = self.totalRepoLOC()
         repoCommits = self.totalRepoCommits()
