@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # Used to test the functionality of "prototype.py", which contains various size metrics
 # computed on a given github repository.
