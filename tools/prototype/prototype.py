@@ -192,9 +192,10 @@ class prototype:
                         temp = line.split(',')
                         sloc += int(temp[4].replace('\n', ''))
                         retval = output.wait()
-                        os.remove(patch.new_file_path)
+                os.remove(patch.new_file_path)
+                        
             i += 1
-            slocPerDiffs.append(str(sloc))
+            slocPerDiffs.append(int(sloc))
         
         return slocPerDiffs
 
