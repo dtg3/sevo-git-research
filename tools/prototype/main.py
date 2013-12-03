@@ -7,8 +7,9 @@ from prototype import prototype
 
 repos = [
     "https://github.com/octocat/Spoon-Knife.git",
-    "https://github.com/mono/mono.git",
+#    "https://github.com/django/django.git",
     "https://github.com/joyent/node.git",
+    "https://github.com/mono/mono.git",
     "https://github.com/ruby/ruby.git",
     "https://github.com/python-git/python.git",
     "https://github.com/mirrors/gcc.git",
