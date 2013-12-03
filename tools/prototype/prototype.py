@@ -219,6 +219,9 @@ class prototype:
         hunks = []
         history = []
 
+        start = 1
+        total = self.totalRepoCommits()
+
         # Get the hex number for each commit within the repository
         for commit in self.base.walk(self.base.head.target, GIT_SORT_TOPOLOGICAL):
             sha = commit.hex
@@ -227,9 +230,19 @@ class prototype:
         # Compare each revision in the history of the repository with the previous rev.
         i = 0
         while i < len(history) - 1:
+            print '\r', start, '/', total,
+            start += 1
+
             t0 = self.base.revparse_single(history[i])
             t1 = self.base.revparse_single(history[i+1])
-            diff = self.base.diff(t0,t1)
+
+            try:
+                diff = self.base.diff(t0,t1)
+            except ValueError:
+                print "Caught value error."
+                i += 1
+                continue
+
             patches = [p for p in diff]
             for patch in patches:
                 hunks.append(len(patch.hunks))
@@ -246,8 +259,14 @@ class prototype:
         sha1 = 0
         sha2 = 0
 
+        start = 1
+        total = self.totalRepoCommits()
+
         # For each commit within the repository
         for commit in self.base.walk(self.base.head.target, GIT_SORT_TOPOLOGICAL):
+
+            print '\r', start, '/', total,
+            start += 1
 
             # Based on the SHA, use git to show the patch for that commit
             sha1 = sha2
@@ -307,6 +326,7 @@ class prototype:
         f.write("large:   " + str(large) + "\n")
         f.write("x-large: " + str(xlarge) + "\n")
         
+
         '''
         # Stats for SLOC
         xsmall = 0
@@ -383,7 +403,7 @@ class prototype:
         f.write("medium:  " + str(medium) + "\n")
         f.write("large:   " + str(large) + "\n")
         f.write("x-large: " + str(xlarge) + "\n")
-        
+
         f.close()
 
 # -----------------------------------------------------------------------------------
