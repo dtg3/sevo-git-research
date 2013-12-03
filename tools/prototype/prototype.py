@@ -108,7 +108,7 @@ class prototype:
             patches = [p for p in diff]
             for patch in patches:
                 for hunk in patch.hunks:
-
+                   
                     # Check the first character in each hunk line. Only those that have
                     # been modified will contain a '+' (insertion) or '-' (deletion)
                     totalModifications = 0
@@ -203,23 +203,96 @@ class prototype:
 
     # Print out all stats for the repository
     def printStats(self):
-
+        
         # Stats on entire repository
-        repoLOC = totalRepoLOC(self)
-        repoCommits = totalRepoCommits(self)
+        repoLOC = self.totalRepoLOC()
+        repoCommits = self.totalRepoCommits()
 
         # Lists by commit
-        locPerCommit = locPerCommit(self)
-        hunkPerCommit = hunkPerCommit(self)
-        filesPerCommit = filesPerCommit(self)
+        locPerCommit = self.locPerCommit()
+        hunksPerCommit = self.hunksPerCommit()
+        filesPerCommit = self.filesPerCommit()
 
         # Lists by hunk
-        locPerHunk = locPerHunk(self)
-        locInHunk = locInHunk(self)
+        #locPerHunk = locPerHunk(self)
+        #locInHunk = locInHunk(self)
+        
+        # Stats for lOC
+        xsmall = 0
+        small  = 0
+        medium = 0
+        large  = 0
+        xlarge = 0
+        for item in locPerCommit:
+            if (item >= 0 and item <= 5):
+                xsmall += 1
+            if (item >= 6 and item <= 46):
+                small += 1
+            if (item >= 47 and item <= 106):
+                medium += 1
+            if (item >= 107 and item <= 166):
+                large += 1
+            if (item >= 167):
+                xlarge += 1
 
+        print "Number of Modified Lines:"
+        print "x-small: " + str(xsmall)
+        print "small:   " + str(small)
+        print "medium:  " + str(medium)
+        print "large:   " + str(large)
+        print "x-large: " + str(xlarge)
 
+        # Print stats for modified files
+        xsmall = 0
+        small  = 0
+        medium = 0
+        large  = 0
+        xlarge = 0
+        for item in filesPerCommit:
+            if (item == 1):
+                xsmall += 1
+            if (item >= 2 and item <= 4):
+                small += 1
+            if (item >= 5 and item <= 7):
+                medium += 1
+            if (item >= 8 and item <= 10):
+                large += 1
+            if (item >= 11):
+                xlarge += 1
 
+        print "Number of modified files:"
+        print "x-small: " + str(xsmall)
+        print "small:   " + str(small)
+        print "medium:  " + str(medium)
+        print "large:   " + str(large)
+        print "x-large: " + str(xlarge)
 
+        # Prints stats for hunks
+        xsmall = 0
+        small  = 0
+        medium = 0
+        large  = 0
+        xlarge = 0
+        for item in hunksPerCommit:
+            if (item >= 0 and item <= 1):
+                xsmall += 1
+            if (item >= 2 and item <= 8):
+                small += 1
+            if (item >= 9 and item <= 17):
+                medium += 1
+            if (item >= 18 and item <= 26):
+                large += 1
+            if (item >= 27):
+                xlarge += 1
+
+        print "Number of hunks per commit:"
+        print "x-small: " + str(xsmall)
+        print "small:   " + str(small)
+        print "medium:  " + str(medium)
+        print "large:   " + str(large)
+        print "x-large: " + str(xlarge)
+
+            
 
 # -----------------------------------------------------------------------------------
 # Private implementation used within the class:
