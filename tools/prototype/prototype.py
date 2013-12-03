@@ -13,7 +13,7 @@ from pygit2 import GIT_SORT_TOPOLOGICAL, GIT_SORT_REVERSE, GIT_CHECKOUT_SAFE_CRE
 import os # Used for git commands, changing directory, and removing cloned repositories
 import re # Used to match the name of a repository given its github URL
 import pprint # Used for pretty printing repo stats
-import subprocess # Used for Drew's weird thing
+import subprocess # Used for cloc
 
 class prototype:
     repo = ""  # Path to a given repository
