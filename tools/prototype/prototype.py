@@ -214,12 +214,8 @@ class prototype:
         locPerCommit = self.locPerCommit()
         hunksPerCommit = self.hunksPerCommit()
         filesPerCommit = self.filesPerCommit()
-
-        # Lists by hunk
-        #locPerHunk = locPerHunk(self)
-        #locInHunk = locInHunk(self)
         
-        # Stats for lOC
+        # Stats for LOC
         xsmall = 0
         small  = 0
         medium = 0
