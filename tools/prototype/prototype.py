@@ -253,8 +253,8 @@ class prototype:
 
     # Print out all stats for the repository
     def printStats(self):
-        
-        print "-----------" + self.name + "-----------"
+        f = open(self.name + '-results.txt', 'w')
+        f.write(("-----------" + self.name + "-----------\n"))
 
         # Stats on entire repository
         repoLOC = self.totalRepoLOC()
@@ -284,12 +284,12 @@ class prototype:
             if (item >= 167):
                 xlarge += 1
 
-        print "Number of Modified Lines:"
-        print "x-small: " + str(xsmall)
-        print "small:   " + str(small)
-        print "medium:  " + str(medium)
-        print "large:   " + str(large)
-        print "x-large: " + str(xlarge)
+        f.write("Number of Modified Lines:\n")
+        f.write("x-small: " + str(xsmall) + "\n")
+        f.write("small:   " + str(small) + "\n")
+        f.write("medium:  " + str(medium) + "\n")
+        f.write("large:   " + str(large) + "\n")
+        f.write("x-large: " + str(xlarge) + "\n")
 
         # Stats for SLOC
         xsmall = 0
@@ -309,12 +309,12 @@ class prototype:
             if (item >= 167):
                 xlarge += 1
 
-        print "Number of Modified SLOC:"
-        print "x-small: " + str(xsmall)
-        print "small:   " + str(small)
-        print "medium:  " + str(medium)
-        print "large:   " + str(large)
-        print "x-large: " + str(xlarge)
+        f.write("Number of Modified SLOC: \n")
+        f.write("x-small: " + str(xsmall) + "\n")
+        f.write("small:   " + str(small) + "\n")
+        f.write("medium:  " + str(medium) + "\n")
+        f.write("large:   " + str(large) + "\n")
+        f.write("x-large: " + str(xlarge) + "\n")
 
         # Print stats for modified files
         xsmall = 0
@@ -334,12 +334,12 @@ class prototype:
             if (item >= 11):
                 xlarge += 1
 
-        print "Number of modified files:"
-        print "x-small: " + str(xsmall)
-        print "small:   " + str(small)
-        print "medium:  " + str(medium)
-        print "large:   " + str(large)
-        print "x-large: " + str(xlarge)
+        f.write("Number of modified files: \n")
+        f.write("x-small: " + str(xsmall) + "\n")
+        f.write("small:   " + str(small) + "\n")
+        f.write("medium:  " + str(medium) + "\n")
+        f.write("large:   " + str(large) + "\n")
+        f.write("x-large: " + str(xlarge) + "\n")
 
         # Prints stats for hunks
         xsmall = 0
@@ -359,14 +359,14 @@ class prototype:
             if (item >= 27):
                 xlarge += 1
 
-        print "Number of hunks per commit:"
-        print "x-small: " + str(xsmall)
-        print "small:   " + str(small)
-        print "medium:  " + str(medium)
-        print "large:   " + str(large)
-        print "x-large: " + str(xlarge)
+        f.write("Number of hunks per commit: \n")
+        f.write("x-small: " + str(xsmall) + "\n")
+        f.write("small:   " + str(small) + "\n")
+        f.write("medium:  " + str(medium) + "\n")
+        f.write("large:   " + str(large) + "\n")
+        f.write("x-large: " + str(xlarge) + "\n")
 
-            
+        f.close()
 
 # -----------------------------------------------------------------------------------
 # Private implementation used within the class:
