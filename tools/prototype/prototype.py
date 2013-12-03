@@ -31,7 +31,10 @@ class prototype:
         m = re.search('/([^/]+).git$', repository)
         if m:
             self.name = m.group(1)
-        os.system('git clone ' + self.repo) # Get the repository from GitHub
+
+        if not os.path.isdir(self.name):
+            os.system('git clone ' + self.repo) # Get the repository from GitHub
+
         self.base = Repository(self.name)
         self.base.checkout('HEAD')
 
@@ -174,10 +177,17 @@ class prototype:
             sloc = 0
             t0 = self.base.revparse_single(history[i].hex)
             t1 = self.base.revparse_single(history[i+1].hex)
-            diff = self.base.diff(t0,t1)
+            try:
+                diff = self.base.diff(t0,t1)
+            except ValueError:
+                print "Caught value error."
+                i += 1
+                continue
+
             patches = [p for p in diff]
             for patch in patches:
-                hunkfile = open(patch.new_file_path, 'w')
+                print patch.new_file_path
+                hunkfile = open("tmp", 'w') 
                 for hunk in patch.hunks:
                     totesLines = 0
                     totesMods = 0
@@ -198,8 +208,7 @@ class prototype:
                         temp = line.split(',')
                         sloc += int(temp[4].replace('\n', ''))
                         retval = output.wait()
-                os.remove(patch.new_file_path)
-                        
+                os.remove("tmp")                        
             i += 1
             slocPerDiffs.append(int(sloc))
         
@@ -269,7 +278,7 @@ class prototype:
 
         # Lists by commit
         locPerCommit   = self.locPerCommit()
-        slocPerDiff    = self.slocPerDiff()
+        #slocPerDiff    = self.slocPerDiff()
         hunksPerCommit = self.hunksPerCommit()
         filesPerCommit = self.filesPerCommit()
         
@@ -297,7 +306,8 @@ class prototype:
         f.write("medium:  " + str(medium) + "\n")
         f.write("large:   " + str(large) + "\n")
         f.write("x-large: " + str(xlarge) + "\n")
-
+        
+        '''
         # Stats for SLOC
         xsmall = 0
         small  = 0
@@ -323,6 +333,7 @@ class prototype:
         f.write("large:   " + str(large) + "\n")
         f.write("x-large: " + str(xlarge) + "\n")
 
+        '''
         # Print stats for modified files
         xsmall = 0
         small  = 0
@@ -372,7 +383,7 @@ class prototype:
         f.write("medium:  " + str(medium) + "\n")
         f.write("large:   " + str(large) + "\n")
         f.write("x-large: " + str(xlarge) + "\n")
-
+        
         f.close()
 
 # -----------------------------------------------------------------------------------
