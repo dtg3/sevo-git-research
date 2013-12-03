@@ -5,6 +5,10 @@
 
 from prototype import prototype
 
+ex = prototype()
+ex.init("https://github.com/octocat/Spoon-Knife.git")
+ex.printStats()
+
 monoRepo = prototype()
 monoRepo.init("https://github.com/mono/mono.git")
 monoRepo.printStats()

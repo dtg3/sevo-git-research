@@ -13,6 +13,7 @@ from pygit2 import GIT_SORT_TOPOLOGICAL, GIT_SORT_REVERSE, GIT_CHECKOUT_SAFE_CRE
 import os # Used for git commands, changing directory, and removing cloned repositories
 import re # Used to match the name of a repository given its github URL
 import pprint # Used for pretty printing repo stats
+import subprocess # Used for Drew's weird thing
 
 class prototype:
     repo = ""  # Path to a given repository
@@ -74,6 +75,8 @@ class prototype:
                 # Additions are found after ", " and before " insertion". Deletions are
                 # found after "(+), " and before " deletion".
                 m = re.search(', (.*) insertion', line)
+                additions = 0
+                deletions = 0
                 if m:
                     additions = m.group(1)
                 m = re.search('\(\+\), (.*) deletion', line)
@@ -163,9 +166,9 @@ class prototype:
         i = 0
         while i < len(history) - 2:
             sloc = 0
-            t0 = base.revparse_single(history[i].hex)
-            t1 = base.revparse_single(history[i+1].hex)
-            diff = base.diff(t0,t1)
+            t0 = self.base.revparse_single(history[i].hex)
+            t1 = self.base.revparse_single(history[i+1].hex)
+            diff = self.base.diff(t0,t1)
             patches = [p for p in diff]
             for patch in patches:
                 hunkfile = open(patch.new_file_path, 'w')
