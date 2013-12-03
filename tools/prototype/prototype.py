@@ -146,7 +146,54 @@ class prototype:
             i += 1
         return loc
 
+    # Perform a diff between all commits starting from oldest to newest
+    #  and compile temp files comprised of only modified lines.
+    #  Run cloc on temp files to get sloc for each diff set.
+    def slocPerDiff(self):
+        # Storage for commit history hashes
+        history = []
+        
+        # Store all slocs
+        slocPerDiffs = []
 
+        # Move through the system history from newest to oldest commit
+        for commit in self.base.walk(self.base.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
+            history.append(commit)
+
+        i = 0
+        while i < len(history) - 2:
+            sloc = 0
+            t0 = base.revparse_single(history[i].hex)
+            t1 = base.revparse_single(history[i+1].hex)
+            diff = base.diff(t0,t1)
+            patches = [p for p in diff]
+            for patch in patches:
+                hunkfile = open(patch.new_file_path, 'w')
+                for hunk in patch.hunks:
+                    totesLines = 0
+                    totesMods = 0
+                    for line in hunk.lines:
+                        totesLines += 1
+                        if line[0] == '-' or line[0] == '+':
+                            totesMods += 1
+                            hunkfile.write(line[1])
+                hunkfile.close()
+            
+                output = subprocess.Popen('cloc ' + patch.new_file_path + ' --by-file --csv', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+                start = False
+                for line in output.stdout.readlines():
+                    if line[0] == 'l':
+                        start = True
+                        continue
+                    if start:
+                        temp = line.split(',')
+                        sloc += int(temp[4].replace('\n', ''))
+                        retval = output.wait()
+                        os.remove(patch.new_file_path)
+            i += 1
+            slocPerDiffs.append(str(sloc))
+        
+        return slocPerDiffs
 
     # Get a list containing the number of hunks changed per commit
     def hunksPerCommit(self):
@@ -211,7 +258,8 @@ class prototype:
         repoCommits = self.totalRepoCommits()
 
         # Lists by commit
-        locPerCommit = self.locPerCommit()
+        locPerCommit   = self.locPerCommit()
+        slocPerDiff    = self.slocPerDiff()
         hunksPerCommit = self.hunksPerCommit()
         filesPerCommit = self.filesPerCommit()
         
@@ -234,6 +282,31 @@ class prototype:
                 xlarge += 1
 
         print "Number of Modified Lines:"
+        print "x-small: " + str(xsmall)
+        print "small:   " + str(small)
+        print "medium:  " + str(medium)
+        print "large:   " + str(large)
+        print "x-large: " + str(xlarge)
+
+        # Stats for SLOC
+        xsmall = 0
+        small  = 0
+        medium = 0
+        large  = 0
+        xlarge = 0
+        for item in slocPerDiff:
+            if (item >= 0 and item <= 5):
+                xsmall += 1
+            if (item >= 6 and item <= 46):
+                small += 1
+            if (item >= 47 and item <= 106):
+                medium += 1
+            if (item >= 107 and item <= 166):
+                large += 1
+            if (item >= 167):
+                xlarge += 1
+
+        print "Number of Modified SLOC:"
         print "x-small: " + str(xsmall)
         print "small:   " + str(small)
         print "medium:  " + str(medium)
