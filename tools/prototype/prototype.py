@@ -60,8 +60,14 @@ class prototype:
         sha1 = 0
         sha2 = 0
 
+        start = 1
+        total = self.totalRepoCommits()
+
         # For each commit within the repository
         for commit in self.base.walk(self.base.head.target, GIT_SORT_TOPOLOGICAL):
+
+            print '\r', start, '/', total,
+            start += 1
 
             # Based on the SHA, use git to show the patch for that commit
             sha1 = sha2
