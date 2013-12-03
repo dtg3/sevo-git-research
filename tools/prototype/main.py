@@ -206,4 +206,3 @@ print (locInHunk)
 
 # repo.printStats()
 ''' 
-repo.destroy()
