@@ -3,7 +3,6 @@
 import argparse
 import sys
 import os
-import sqlite3
 import imp
 
 from gitreap import *
@@ -31,7 +30,7 @@ def main(argv):
     print repo
     hunks(repo)
     commitInfo(repo)
-    getLOCS(repo)
+    #getLOCS(repo)
 
   # RUN MAIN - MAKES IT FEEL MORE LIKE A REGUALR C++ APP
 if __name__ == '__main__':

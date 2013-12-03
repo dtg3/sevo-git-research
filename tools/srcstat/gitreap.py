@@ -43,14 +43,17 @@ def hunks(repo):
 
 	i = 0
 	while i < len(history) - 2:
+		sloc = 0
+		print 'Diff#: ' + str(i + 1)
 		t0 = base.revparse_single(history[i].hex)
 		t1 = base.revparse_single(history[i+1].hex)
 		diff = base.diff(t0,t1)
 		patches = [p for p in diff]
 		for patch in patches:
-			print 'OLD FILE NAME: ' + patch.old_file_path
-			print 'NEW FILE NAME: ' + patch.new_file_path
-			print 'NUM HUNKS: ' + str(len(patch.hunks))
+			#print 'OLD FILE NAME: ' + patch.old_file_path
+			#print 'NEW FILE NAME: ' + patch.new_file_path
+			#print 'NUM HUNKS: ' + str(len(patch.hunks))
+			hunkfile = open(patch.new_file_path, 'w')
 			for hunk in patch.hunks:
 				totesLines = 0
 				totesMods = 0
@@ -58,12 +61,24 @@ def hunks(repo):
 					totesLines += 1
 					if line[0] == '-' or line[0] == '+':
 						totesMods += 1
-						print line
-				print 'TOTAL LINES: ' + str(totesLines)
-				print 'TOTAL MODS: ' + str(totesMods)
-		print ''
+						hunkfile.write(line[1])
+			#	print 'TOTAL LINES: ' + str(totesLines)
+			#	print 'TOTAL MODS: ' + str(totesMods)
+			hunkfile.close()
+			
+			output = subprocess.Popen('cloc ' + patch.new_file_path + ' --by-file --csv', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+			start = False
+			for line in output.stdout.readlines():
+				if line[0] == 'l':
+					start = True
+					continue
+				if start:
+					temp = line.split(',')
+					sloc += int(temp[4].replace('\n', ''))
+					retval = output.wait()
+			os.remove(patch.new_file_path)
 		i += 1
-	print ''
+		print 'SLOC: ' + str(sloc)
 
 def commitInfo(repo):
 	# GET A REPO ON DISK
