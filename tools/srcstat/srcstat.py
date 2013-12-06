@@ -8,6 +8,7 @@ import imp
 from gitreap import *
 
 repos = []
+history = []
 
 def main(argv):
   # CLI MAGIC
@@ -28,9 +29,9 @@ def main(argv):
 
   for repo in repos:
     print repo
-    hunks(repo)
-    commitInfo(repo)
-    #getLOCS(repo)
+    hist = getHist(repo)
+    process(repo, hist)
+    #commitInfo(repo)
 
   # RUN MAIN - MAKES IT FEEL MORE LIKE A REGUALR C++ APP
 if __name__ == '__main__':

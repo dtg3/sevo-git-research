@@ -1,6 +1,5 @@
 import os
 import time
-import subprocess
 
 from pygit2 import clone_repository
 from pygit2 import Repository
@@ -12,6 +11,7 @@ def collectRepo(repo):
 	repo_path = 'repos/' + urlChunks[len(urlChunks)-1].replace('.git', '').lower()
 
 	if not os.path.exists(repo_path):
+		print 'Checking out ' + repo_path
 		clone_repository(repo_url, repo_path)
 	else:
 		print 'Repository ' + repo_path + ' already exists!'
@@ -29,79 +29,129 @@ def collectAllRepos(repos):
 	repoList.close()
 	return currentRepos
 
-def hunks(repo):
-	# GET A REPO ON DISK
+def getHist(repo):
 	base = Repository(repo)
 	base.checkout('HEAD')
-
-	# STORAGE FOR COMMIT HEX VALUES
 	history = []
-
-	# MOVE THROUGH THE SYSTEM HISTORY FROM NEWEST TO OLDEST COMMIT
 	for commit in base.walk(base.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
 		history.append(commit)
+	
+	return history
 
+def process(repo, history):
+	# GET A REPO ON DISK
+	base = Repository(repo)
+	base.checkout('HEAD')
+	
+	file_xsmall = 0
+	file_small = 0
+	file_medium = 0
+	file_large = 0
+	file_xlarge = 0
+		
+	hunk_xsmall = 0
+	hunk_small = 0
+	hunk_medium = 0
+	hunk_large = 0
+	hunk_xlarge = 0
+
+	line_xsmall = 0
+	line_small = 0
+	line_medium = 0
+	line_large = 0
+	line_xlarge = 0 
+	
 	i = 0
-	while i < len(history) - 2:
-		sloc = 0
-		print 'Diff#: ' + str(i + 1)
+	while i < len(history) - 1:
+		print '\rDiff#: ' + str(i + 1) + ' of ' + str(len(history)-1),
 		t0 = base.revparse_single(history[i].hex)
 		t1 = base.revparse_single(history[i+1].hex)
-		diff = base.diff(t0,t1)
-		patches = [p for p in diff]
-		for patch in patches:
-			#print 'OLD FILE NAME: ' + patch.old_file_path
-			#print 'NEW FILE NAME: ' + patch.new_file_path
-			#print 'NUM HUNKS: ' + str(len(patch.hunks))
-			hunkfile = open(patch.new_file_path, 'w')
-			for hunk in patch.hunks:
-				totesLines = 0
-				totesMods = 0
-				for line in hunk.lines:
-					totesLines += 1
-					if line[0] == '-' or line[0] == '+':
-						totesMods += 1
-						hunkfile.write(line[1])
-			#	print 'TOTAL LINES: ' + str(totesLines)
-			#	print 'TOTAL MODS: ' + str(totesMods)
-			hunkfile.close()
-			
-			output = subprocess.Popen('cloc ' + patch.new_file_path + ' --by-file --csv', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-			start = False
-			for line in output.stdout.readlines():
-				if line[0] == 'l':
-					start = True
-					continue
-				if start:
-					temp = line.split(',')
-					sloc += int(temp[4].replace('\n', ''))
-					retval = output.wait()
-			os.remove(patch.new_file_path)
-		i += 1
-		print 'SLOC: ' + str(sloc)
+		
+		try:
+			diff = base.diff(t0,t1)
+		except ValueError:
+			i += 1
+			continue
+		
+		files = [p for p in diff]
+		
+		# Patches are modified files
+		if len(files) == 1:
+			file_xsmall += 1
+		if len(files) >= 2 and len(files) <= 4:
+			file_small += 1
+		if len(files) >= 5 and len(files) <= 7:
+			file_medium += 1
+		if len(files) >= 8 and len(files) <= 10:
+			file_large += 1
+		if len(files) >= 11:
+			file_xlarge += 1
+		
+		hunksInCommit = 0
+		linesInCommit = 0
 
-def commitInfo(repo):
+		for modfile in files:
+			hunksInCommit = len(modfile.hunks)
+			for hunk in modfile.hunks:
+				for line in hunk.lines:
+					if line[0] == '-' or line[0] == '+':
+						linesInCommit += 1
+
+		#OUTPUT
+		if hunksInCommit <= 1:
+			hunk_xsmall += 1
+		if hunksInCommit >= 2 and hunksInCommit <= 8:
+			hunk_small += 1
+		if hunksInCommit >= 9 and hunksInCommit <= 17:
+			hunk_medium += 1
+		if hunksInCommit >= 18 and hunksInCommit <= 26:
+			hunk_large += 1
+		if hunksInCommit >= 27:
+			hunk_xlarge += 1
+
+		if linesInCommit <= 5:
+			line_xsmall += 1
+		if linesInCommit >= 6 and linesInCommit <= 46:
+			line_small += 1
+		if linesInCommit >= 47 and linesInCommit <= 106:
+			line_medium += 1
+		if linesInCommit >= 107 and linesInCommit <= 166:
+			line_xsmall += 1
+		if linesInCommit >= 167:
+			line_xlarge += 1
+
+		i += 1
+	print ''
+	print '--------- ' + repo + ' ----------'
+	print 'Number of Lines Modified:'
+	print 'x-small: ' + str(line_xsmall)
+	print 'small: ' + str(line_small)
+	print 'medium: ' + str(line_medium)
+	print 'large: ' + str(line_large)
+	print 'x-large: ' + str(line_xlarge)
+
+	print 'Number of Files Modified:'
+	print 'x-small: ' + str(file_xsmall)
+	print 'small: ' + str(file_small)
+	print 'medium: ' + str(file_medium)
+	print 'large: ' + str(file_large)
+	print 'x-large: ' + str(file_xlarge)
+
+	print 'Number of Hunks Per Commit'
+	print 'x-small: ' + str(hunk_xsmall)
+	print 'small: ' + str(hunk_small)
+	print 'medium: ' + str(hunk_medium)
+	print 'large: ' + str(hunk_large)
+	print 'x-large: ' + str(hunk_xlarge)
+
+def commitInfo(repo, history):
 	# GET A REPO ON DISK
 	base = Repository(repo)
 	base.checkout('HEAD')
 
 	# MOVE THROUGH THE SYSTEM HISTORY FROM NEWEST TO OLDEST COMMIT
-	for commit in base.walk(base.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
+	for commit in history:
 		print 'Date/Time: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(commit.commit_time))
 		print 'Comment Hex: ' + commit.hex
 		print 'Message: ' + commit.message.rstrip('\n')
 		print ''
-		
-def getLOCS(repo):
-	#for repo in repos:
-	# call(["ls", "-l"])
-	# cloc [directory] --by-file -csv
-	output = subprocess.Popen('cloc ' + repo.replace('.git', '') + ' --by-file --csv', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-	start = False
-	for line in output.stdout.readlines():
-		if line[0] == 'l':
-			start = True
-			
-		if start:
-			print line,
-	retval = output.wait()
