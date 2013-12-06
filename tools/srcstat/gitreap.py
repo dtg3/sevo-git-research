@@ -42,7 +42,7 @@ def process(repo, history):
 	# GET A REPO ON DISK
 	base = Repository(repo)
 	base.checkout('HEAD')
-	
+
 	file_xsmall = 0
 	file_small = 0
 	file_medium = 0
@@ -64,6 +64,7 @@ def process(repo, history):
 	i = 0
 	while i < len(history) - 1:
 		print '\rDiff#: ' + str(i + 1) + ' of ' + str(len(history)-1),
+
 		t0 = base.revparse_single(history[i].hex)
 		t1 = base.revparse_single(history[i+1].hex)
 		
@@ -75,7 +76,6 @@ def process(repo, history):
 		
 		files = [p for p in diff]
 		
-		# Patches are modified files
 		if len(files) == 1:
 			file_xsmall += 1
 		if len(files) >= 2 and len(files) <= 4:
@@ -91,13 +91,13 @@ def process(repo, history):
 		linesInCommit = 0
 
 		for modfile in files:
-			hunksInCommit = len(modfile.hunks)
+			hunksInCommit += len(modfile.hunks)
 			for hunk in modfile.hunks:
 				for line in hunk.lines:
 					if line[0] == '-' or line[0] == '+':
 						linesInCommit += 1
 
-		#OUTPUT
+
 		if hunksInCommit <= 1:
 			hunk_xsmall += 1
 		if hunksInCommit >= 2 and hunksInCommit <= 8:
@@ -116,33 +116,37 @@ def process(repo, history):
 		if linesInCommit >= 47 and linesInCommit <= 106:
 			line_medium += 1
 		if linesInCommit >= 107 and linesInCommit <= 166:
-			line_xsmall += 1
+			line_large += 1
 		if linesInCommit >= 167:
 			line_xlarge += 1
 
 		i += 1
 	print ''
-	print '--------- ' + repo + ' ----------'
-	print 'Number of Lines Modified:'
-	print 'x-small: ' + str(line_xsmall)
-	print 'small: ' + str(line_small)
-	print 'medium: ' + str(line_medium)
-	print 'large: ' + str(line_large)
-	print 'x-large: ' + str(line_xlarge)
+	output = open(repo.replace('/.git', '') + '.txt','w')
 
-	print 'Number of Files Modified:'
-	print 'x-small: ' + str(file_xsmall)
-	print 'small: ' + str(file_small)
-	print 'medium: ' + str(file_medium)
-	print 'large: ' + str(file_large)
-	print 'x-large: ' + str(file_xlarge)
+	output.write('--------- ' + repo + ' ----------' + '\n')
+	output.write('Number of Lines Modified:' + '\n')
+	output.write('x-small: ' + str( + line_xsmall) + '\n')
+	output.write('small: ' + str(line_small) + '\n')
+	output.write('medium: ' + str(line_medium) + '\n')
+	output.write('large: ' + str(line_large) + '\n')
+	output.write('x-large: ' + str(line_xlarge) + '\n')
 
-	print 'Number of Hunks Per Commit'
-	print 'x-small: ' + str(hunk_xsmall)
-	print 'small: ' + str(hunk_small)
-	print 'medium: ' + str(hunk_medium)
-	print 'large: ' + str(hunk_large)
-	print 'x-large: ' + str(hunk_xlarge)
+	output.write('Number of Files Modified:' + '\n')
+	output.write('x-small: ' + str(file_xsmall) + '\n')
+	output.write('small: ' + str(file_small) + '\n')
+	output.write('medium: ' + str(file_medium) + '\n')
+	output.write('large: ' + str(file_large) + '\n')
+	output.write('x-large: ' + str(file_xlarge) + '\n')
+
+	output.write('Number of Hunks Per Commit' + '\n')
+	output.write('x-small: ' + str(hunk_xsmall) + '\n')
+	output.write('small: ' + str(hunk_small) + '\n')
+	output.write('medium: ' + str(hunk_medium) + '\n')
+	output.write('large: ' + str(hunk_large) + '\n')
+	output.write('x-large: ' + str(hunk_xlarge) + '\n')
+
+	output.close()
 
 def commitInfo(repo, history):
 	# GET A REPO ON DISK
