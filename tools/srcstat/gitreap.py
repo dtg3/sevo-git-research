@@ -25,8 +25,8 @@ def collectAllRepos(repos):
 
 	lines = repoList.readlines()
 	for line in lines:
-		currentRepos = collectRepo(line.rstrip())
-	
+		currentRepos.append(collectRepo(line.rstrip()))
+		
 	repoList.close()
 	return currentRepos
 
