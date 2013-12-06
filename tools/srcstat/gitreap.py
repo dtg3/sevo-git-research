@@ -1,5 +1,6 @@
 import os
 import time
+import datetime
 
 from pygit2 import clone_repository
 from pygit2 import Repository
@@ -125,7 +126,11 @@ def process(repo, history):
 
 		i += 1
 	print ''
-	output = open(repo.replace('/.git', '') + '.txt','w')
+
+	ts = time.time()
+	st = datetime.datetime.fromtimestamp(ts).strftime('-%Y-%m-%d.%H.%M.%S')
+	name = repo.replace('/.git', '') + st + '.txt'
+	output = open(name,'w')
 
 	output.write('--------- ' + repo + ' ----------' + '\n')
 	output.write('Number of Lines Modified:' + '\n')
