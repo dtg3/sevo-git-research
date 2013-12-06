@@ -71,6 +71,9 @@ def process(repo, history):
 		try:
 			diff = base.diff(t0,t1)
 		except ValueError:
+			print ''
+			print 'Value Error'
+			print ''
 			i += 1
 			continue
 		
