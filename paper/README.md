@@ -3,7 +3,7 @@
 This paper covers the topics of Git and stuff. We should probably put the basic
 abstract or something here in this readme description.
 
-### Compiling to PDF
+## Do Not Edit Here
 
-This report is going to be in _some sort of_ pre-processed format (LaTeX,
-Markdown?). So there will be some sort of compiling process. We'll see...
+This is used as a back-up copy in case something terrible happens.
+
